@@ -15,13 +15,13 @@ def format_number(number):
     return f"{formatted} тыс."
 
 
-app = Flask(__name__)
+application = Flask(__name__)
 
-@app.route('/')
+@application.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/district')
+@application.route('/district')
 def district():
 
     district_name = request.args.get('district', '')
@@ -74,8 +74,8 @@ def district():
 
     cursor = connection.cursor()
     result = cursor.execute(text_query, (district_name, current_year)).fetchone()
-    mun_count = result[1]          # Второй столбец (индекс 1)
-    district_population = format_number(result[2])  # Третий столбец (индекс 2)
+    mun_count = result[1]
+    district_population = format_number(result[2])
     district_area = round(result[3], 1)
     district_density = format_number(result[4])
 
@@ -199,4 +199,4 @@ def district():
                            chart_data=chart_data)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    application.run(debug=True)
