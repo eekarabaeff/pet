@@ -18,7 +18,11 @@ def format_number(number):
 application = Flask(__name__)
 
 @application.route('/')
-def index():
+def resume():
+    return render_template('cv.html')
+
+@application.route('/info')
+def info():
     return render_template('index.html')
 
 @application.route('/district')
@@ -74,8 +78,8 @@ def district():
 
     cursor = connection.cursor()
     result = cursor.execute(text_query, (district_name, current_year)).fetchone()
-    mun_count = result[1]
-    district_population = format_number(result[2])
+    mun_count = result[1]          # Второй столбец (индекс 1)
+    district_population = format_number(result[2])  # Третий столбец (индекс 2)
     district_area = round(result[3], 1)
     district_density = format_number(result[4])
 
