@@ -7,17 +7,19 @@ body {
 }
 
 .header-block {
-    margin: 0% 5%;
+    margin: 0% auto;
 }
 
 .info-block {
-    margin: 0% 5%;
-    margin-top: 3%;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .block-container {
     margin: 0 5%;
     display: flex;
+    flex-wrap: wrap;  /* Разрешаем перенос на новую строку */
 }
 
 .inner-block {
@@ -43,7 +45,6 @@ body {
 }
 
 .example-block {
-    display: inline-block;
     margin: 10px;
     position: relative;
     border: 2px solid lightgray;
@@ -60,6 +61,51 @@ body {
     position: absolute;
     left: 5px;
     text-align: left;
+}
+
+.examples-block-container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.example-block-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.example-image-container {
+    position: relative;
+    height: 200px;
+    width: 150px;
+}
+
+.example-image-container img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.example-description {
+    position: relative;
+    width: 600px;
+}
+
+.more {
+    text-decoration: underline;
+}
+
+.example-link {
+    display: inline-flex;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.example-link:hover {
+    text-decoration: underline;
+    background-color: #87CEFA;
 }
 
 .education-block .image-container {

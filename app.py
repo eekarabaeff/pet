@@ -177,17 +177,15 @@ def district():
     ]
 
     for i, column in enumerate(muns):
-        color = saturated_palette[i % len(saturated_palette)]  # Зацикливание, если цветов мало
+        color = saturated_palette[i % len(saturated_palette)]
         chart_data["datasets"].append({
             "label": column,
             "data": chart_df[column].tolist(),
             "borderColor": color,
-            "backgroundColor": color + "80",  # 50% прозрачности (Hex: 80 = 128/255)
+            "backgroundColor": color + "80",
             "borderWidth": 2,
             "tension": 0.4
         })
-
-    chart_data
 
     connection.close()
 

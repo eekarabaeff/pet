@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/static/styles/cv.css">
 </head>
 <body>
-    <div class="header-block">
+    <div class="info-block">
         <h2>Аналитик</h2>
         <div class="candidate-info">
             <div class="details">
@@ -21,8 +21,22 @@
     </div>
     <div class="info-block">
         <h2>Опыт работы</h2>
-        <div class="block-container" id="spbcis">
+        <div class="block-container">
             <div class="inner-block">
+                <div class="place">
+                    <p><strong class="workplace">Русагро</strong></p>
+                </div>
+                <div class="image-container">
+                    <img src="static\icons\rusagro.jpg">
+                </div>
+                <div class="qualification">
+                    <p>Аналитик данных</p>
+                </div>
+                <div class="date-range">
+                    <p>июнь 25 —  н.в. </p>
+                </div>
+            </div>
+            <div class="inner-block" id="spbcis">
                 <div class="place">
                     <p><strong class="workplace">Центр информационного сопровождения</strong></p>
                 </div>
@@ -33,7 +47,7 @@
                     <p>Аналитик</p>
                 </div>
                 <div class="date-range">
-                    <p>июль 24 — сентябрь 24</p>
+                    <p>апрель 25 — июнь 25</p>
                 </div>
             </div>
             <div class="inner-block" id="lenta">
@@ -117,18 +131,36 @@
             </a>
         </div>
     </div>
-    <div class="info-block">
-        <h2>Пример работы</h2>
-        <div class="block-container">
-            <div class="example-block" id="districts-info">
-                <div class="place">
-                    <p><strong>Районы Санкт-Петербурга</strong></p>
-                </div>
-                <div class="image-container">
+    <div class="info-block" id="examples">
+        <h2>Примеры работ</h2>
+        <div class="examples-block-container">
+            <h3>Статистика Санкт-Петербурга</h3>
+            <div class="example-block-wrapper">
+                <div class="example-image-container">
                     <img src="/static/images/spb.svg">
                 </div>
-                <div class="description">
-                    <p>Выберите район и посмотрите данные по нему</p>
+                <div class="example-description">
+                    <p>Pet-проект по сбору статистики. Собрана база данных по населению районов и муниципальных образований Санкт-Петербурга за 2018-2024 гг. У каждого района есть своя страница с визуализацией данных.</p>
+                    <div class="example-link">
+                        <a href="{{ url_for('info') }}" class="more">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="examples-block-container">
+            <h3>Анализ популяции кур на птицефабриках</h3>
+            <div class="example-block-wrapper">
+                <div class="example-image-container">
+                    <img src="static\images\cover2025.jpg">
+                </div>
+                <div class="example-description">
+                    <p>Статья для конференции СПбГУ. В статье проведён анализ воспроизводства кур-несушек с помощью математических методов. Демографические процессы описаны в терминах динамических систем и проверены на наличие устойчивости.</p>
+                    <div class="example-link">
+                        <a href="http://www.cpsconf.ru/" target="_blank" class="more">Подробнее</a>
+                    </div>
+                    <div class="example-link">
+                        <a href="static\files\article.pdf" class="more" download>Скачать файл статьи (PDF)</a>
+                    </div>
                 </div>
             </div>
         </div>
