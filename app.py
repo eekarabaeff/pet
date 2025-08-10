@@ -19,11 +19,11 @@ application = Flask(__name__)
 
 @application.route('/')
 def resume():
-    return render_template('cv.html')
+    return render_template('index.html')
 
 @application.route('/info')
 def info():
-    return render_template('index.html')
+    return render_template('mun.html')
 
 @application.route('/district')
 def district():

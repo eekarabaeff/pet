@@ -1,116 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Районы Санкт-Петербурга</title>
-    <link rel="stylesheet" href="/static/styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <link rel="stylesheet" href="/static/styles/cv.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Районы Санкт-Петербурга</h1>
-    </div>
-    
-    <div class="content-wrapper">
-        <div class="text-block">
-            <h2>Список районов:</h2>
-            <ol id="distList">
-                <li>
-                    <span class="districtItem" id="AdmiralteyskyD">
-                        <a href="district.html">Адмиралтейский</a>
-                    </span>
-                </li>
-                <li>
-                    <span class="districtItem" id="VasileostrovskyD">
-                        <a href="district.html">Василеостровский</a>
-                    </span>
-                </li>
-                <li>
-                    <span class="districtItem" id="VyborgskyD">
-                        <a href="district.html">Выборгский</a>
-                    </span>
-                </li>
-                <li>
-                    <span class="districtItem" id="KalininskyD">
-                        <a href="district.html">Калининский</a>
-                    </span>
-                </li>
-                <li>
-                    <span class="districtItem" id="KirovskyD">
-                        <a href="district.html">Кировский</a>
-                    </span>
-                </li>
-                <li>
-                    <span class="districtItem" id="KolpinskyD">
-                        <a href="district.html">Колпинский</a>
-                    </span>
-                </li>
-                <li>
-                    <span class="districtItem" id="KrasnogvardeyskyD">
-                        <a href="district.html">Красногвардейский</a>
-                    </span>
-                </li>
-                <li>
-                    <span class="districtItem" id="KrasnoselskyD">
-                        <a href="district.html">Красносельский</a>
-                    </span>
-                </li>
-                <li>
-                    <span class="districtItem" id="KronshtadtskyD">
-                        <a href="district.html">Кронштадтский</a>
-                    </span>
-                </li>
-                <li>
-                    <span class="districtItem" id="KurortnyD">
-                        <a href="district.html">Курортный</a>
-                    </span>
-                </li>
-                <li>
-                    <span class="districtItem" id="MoskovskyD">
-                        <a href="district.html">Московский</a>
-                    </span>
-                </li>
-                <li>
-                    <span class="districtItem" id="NevskyD">
-                        <a href="district.html">Невский</a>
-                    </span>
-                </li>
-                <li>
-                    <span class="districtItem" id="PetrogradskyD">
-                        <a href="district.html">Петроградский</a>
-                    </span>
-                </li>
-                <li>
-                    <span class="districtItem" id="PetrodvortsovyD">
-                        <a href="district.html">Петродворцовый</a>
-                    </span>
-                </li>
-                <li>
-                    <span class="districtItem" id="PrimorskyD">
-                        <a href="district.html">Приморский</a>
-                    </span>
-                </li>
-                <li>
-                    <span class="districtItem" id="PushkinskyD">
-                        <a href="district.html">Пушкинский</a>
-                    </span>
-                </li>
-                <li>
-                    <span class="districtItem" id="FrunzenskyD">
-                        <a href="district.html">Фрунзенский</a>
-                    </span>
-                </li>
-                <li>
-                    <span class="districtItem" id="TsentralnyD">
-                        <a href="district.html">Центральный</a>
-                    </span>
-                </li>
-            </ol>
-        </div>
-        <div class="map-container">
-            <object id="spbMap" type="image/svg+xml" data="/static/images/spb.svg">
-                Ваш браузер не поддерживает SVG
-            </object>
+    <div class="info-block">
+        <h2>Аналитик</h2>
+        <div class="candidate-info">
+            <div class="details">
+                <h3>Егор Карабаев</h3>
+                <p><strong>Возраст:</strong> 23 года</p>
+                <p><strong>Город:</strong> Москва/Санкт-Петербург</p>
+                <p><strong>Телефон:</strong> +7 (915) 082-80-62</p>
+                <p><strong>Email:</strong> eekarabaev@mail.ru</p>
+            </div>
         </div>
     </div>
+    <div class="info-block">
+        <h2>Опыт работы</h2>
+        <div class="block-container">
+            <div class="inner-block">
+                <div class="place">
+                    <p><strong class="workplace">Русагро</strong></p>
+                </div>
+                <div class="image-container">
+                    <img src="static\icons\rusagro.jpg">
+                </div>
+                <div class="qualification">
+                    <p>Аналитик данных</p>
+                </div>
+                <div class="date-range">
+                    <p>июнь 25 —  н.в. </p>
+                </div>
+            </div>
+            <div class="inner-block" id="spbcis">
+                <div class="place">
+                    <p><strong class="workplace">Центр информационного сопровождения</strong></p>
+                </div>
+                <div class="image-container">
+                    <img src="/static/icons/Flag_of_Saint_Petersburg.svg">
+                </div>
+                <div class="qualification">
+                    <p>Аналитик</p>
+                </div>
+                <div class="date-range">
+                    <p>апрель 25 — июнь 25</p>
+                </div>
+            </div>
+            <div class="inner-block" id="lenta">
+                <div class="place">
+                    <p><strong class="workplace">Лента</strong></p>
+                </div>
+                <div class="image-container">
+                    <img src="/static/icons/lenta.png">
+                </div>
+                <div class="qualification">
+                    <p>Аналитик</p>
+                </div>
+                <div class="date-range">
+                    <p>июль 24 — сентябрь 24</p>
+                </div>
+            </div>
+            <div class="inner-block" id="samokat">
+                <div class="place">
+                    <p><strong class="workplace">Самокат</strong></p>
+                </div>
+                <div class="image-container">
+                    <img src="/static/icons/smkt.png">
+                </div>
+                <div class="qualification">
+                    <p>Операционный аналитик</p>
+                </div>
+                <div class="date-range">
+                    <p>апрель 24 — июль 24</p>
+                </div>
+            </div>
+            <div class="inner-block" id="raif">
+                <div class="place">
+                    <p><strong class="workplace">Райффайзенбанк</strong></p>
+                </div>
+                <div class="image-container">
+                    <img src="/static/icons/raif.jpg">
+                </div>
+                <div class="qualification">
+                    <p>Стажёр-аналитик</p>
+                </div>
+                <div class="date-range">
+                    <p>июль 23 — ноябрь 24</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info-block">
+        <h2>Образование</h2>
+        <div class="block-container">
+            <a href="https://spbu.ru/postupayushchim/programms/magistratura/matematicheskoe-i-informacionnoe-obespechenie-ekonomicheskoy" target="_blank">
+                <div class="education-block">
+                    <div class="place">
+                        <p><strong class="workplace">СПбГУ</strong></p>
+                    </div>
+                    <div class="image-container">
+                        <img src="/static/icons/spbu.png">
+                    </div>
+                    <div class="qualification">
+                        <p>Магистратура | Прикладная математика</p>
+                    </div>
+                    <div class="date-range">
+                        <p>2024 - 2026</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.hse.ru/ba/we/" target="_blank">
+                <div class="education-block">
+                    <div class="place">
+                        <p><strong class="workplace">НИУ ВШЭ</strong></p>
+                    </div>
+                    <div class="image-container">
+                        <img src="/static/icons/hse.svg">
+                    </div>
+                    <div class="qualification">
+                        <p>Бакалавриат | Экономика</p>
+                    </div>
+                    <div class="date-range">
+                        <p>2020 - 2024</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="info-block" id="examples">
+        <h2>Примеры работ</h2>
+        <div class="examples-block-container">
+            <h3>Статистика Санкт-Петербурга</h3>
+            <div class="example-block-wrapper">
+                <div class="example-image-container">
+                    <img src="/static/images/spb.svg">
+                </div>
+                <div class="example-description">
+                    <p>Pet-проект по сбору статистики. Собрана база данных по населению районов и муниципальных образований Санкт-Петербурга за 2018-2024 гг. У каждого района есть своя страница с визуализацией данных.</p>
+                    <div class="example-link">
+                        <a href="{{ url_for('info') }}" class="more">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="examples-block-container">
+            <h3>Анализ популяции кур на птицефабриках</h3>
+            <div class="example-block-wrapper">
+                <div class="example-image-container">
+                    <img src="static\images\cover2025.jpg">
+                </div>
+                <div class="example-description">
+                    <p>Статья для конференции СПбГУ. В статье проведён анализ воспроизводства кур-несушек с помощью математических методов. Демографические процессы описаны в терминах динамических систем и проверены на наличие устойчивости.</p>
+                    <div class="example-link">
+                        <a href="http://www.cpsconf.ru/" target="_blank" class="more">Подробнее</a>
+                    </div>
+                    <div class="example-link">
+                        <a href="static\files\article.pdf" class="more" download>Скачать файл статьи (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <h2>Свяжитесь со мной:</h2>
+            <div class="social-links">
+                <ul>
+                    <li><a href="https://t.me/egrkrbv">Telegram</a></li>
+                    <li>eekarabaev@mail.ru</li>
+                    <li>+7 (915) 082-80-62</li>
+                </ul>
+        </div>
+    </footer>
+    <div class="modal" id="modalWindow">
+        <div class="modalContent">
+            <span class="close-button" id="closeBtn">&times;</span>
+            <h2 id="modalHeader">Модальное окно</h2>
+            <p>Задачи и обязанности:</p>
+            <p id='modalTasks'></p>
+        </div>
+    </div>
+    <script src="/static/js/cv.js"></script>
+    <script src="/static/js/modal.js"></script>
 </body>
-<script src="../static/js/script.js"></script>
 </html>
